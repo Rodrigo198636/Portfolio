@@ -35,6 +35,49 @@ body::before {
   }
 }
 
+/* Estilos básicos para el contenedor del texto */
+.text-container {
+  overflow: hidden; /* Ocultar cualquier contenido que desborde el contenedor */
+  white-space: nowrap; /* Evitar el salto de línea */
+}
+
+/* Estilos para el texto animado */
+.animated-text {
+  display: inline-block; /* Permitir la animación del texto dentro del contenedor */
+  font-size: 2rem; /* Tamaño del texto */
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  color: #fff; /* Color del texto */
+  animation: moveText 10s linear infinite; /* Animación de 10 segundos que se repite infinitamente */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2); /* Agregar brillo */
+}
+
+/* Animación de texto que se mueve de izquierda a derecha */
+@keyframes moveText {
+  0% {
+    transform: translateX(-100%); /* Comienza fuera del contenedor a la izquierda */
+  }
+  100% {
+    transform: translateX(100%); /* Termina fuera del contenedor a la derecha */
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .animated-text {
+    font-size: 1.5rem; /* Tamaño del texto más pequeño para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 400px) {
+  .animated-text {
+    font-size: 1.2rem; /* Tamaño del texto más pequeño para pantallas muy pequeñas */
+  }
+}
+
+
+
+
 .responsive-img {
   max-width: 100%;
   height: auto;
@@ -194,7 +237,107 @@ h6 {
     flex-direction: column;
     align-items: center;
   }
+
+  @media (max-width: 768px){
+    #header h1 {
+      font-size: 36px;
+    }
+  
+    #header h2 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    #header .social-links {
+      margin-top: 15px;
+    }
+  
+    #header .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 }
+
+/* Estilos básicos para el contenedor de imágenes */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espacio entre las imágenes */
+  justify-content: relative; /* Centra las imágenes horizontalmente */
+  padding: 10px; /* Espacio alrededor del contenedor */
+}
+
+/* Estilos para las imágenes */
+.image-container img {
+  width: 50px; /* Tamaño base de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del tamaño */
+  transition: transform 0.3s; /* Transición suave al cambiar el tamaño */
+}
+
+/* Efecto al pasar el ratón por encima de la imagen */
+.image-container img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}
+
+/* Consultas de medios para adaptabilidad */
+@media (min-width: 600px) {
+  .image-container img {
+      width: 75px; /* Tamaño de las imágenes para pantallas medianas */
+  }
+}
+
+@media (min-width: 900px) {
+  .image-container img {
+      width: 100px; /* Tamaño de las imágenes para pantallas grandes */
+  }
+}
+
+/* Consultas de medios para pantallas pequeñas */
+@media (max-width: 600px) {
+  .image-container {
+      flex-direction: column; /* Alinea las imágenes verticalmente */
+      align-items: center; /* Centra las imágenes en pantallas pequeñas */
+  }
+  .image-container img {
+      width: 60px; /* Tamaño más pequeño para pantallas pequeñas */
+  }
+}
+
+.new-image-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan a una nueva línea cuando no hay espacio suficiente */
+  gap: 10px;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Centra las imágenes verticalmente */
+}
+
+.new-image-container img {
+  width: 50px; /* Tamaño base de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del tamaño */
+  transition: transform 0.3s; /* Transición suave al cambiar el tamaño */
+}
+.new-image-container img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .new-image-container img {
+    max-width: 45%; /* Ajusta el tamaño máximo de las imágenes para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .new-image-container img {
+    max-width: 100%; /* Ajusta el tamaño máximo de las imágenes para pantallas muy pequeñas */
+  }
+}
+
+
+
 
 /* Header Top */
 #header.header-top {
@@ -488,6 +631,18 @@ section .container {
   margin-bottom: 0;
 }
 
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .about-me .content h3 {
+    font-size: 22px; /* Reduce el tamaño del título en pantallas pequeñas */
+  }
+
+  .about-me .content ul li {
+    flex-direction: column; /* Cambia el diseño de las listas a una columna en pantallas pequeñas */
+    align-items: flex-start; /* Ajusta la alineación vertical para evitar romper en pantallas pequeñas */
+  }
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -531,7 +686,7 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Skills
+# habilidades
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -567,7 +722,7 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Interests
+# inereses
 --------------------------------------------------------------*/
 .interests .icon-box {
   display: flex;
@@ -1026,6 +1181,11 @@ section .container {
   padding: 15px 0 0 0;
 }
 
+@media (max-width: 768px) {
+  .portfolio-details img {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes en dispositivos más pequeños */
+    height: auto; /* Ajusta la altura de las imágenes de forma proporcional */
+  }
 @media (max-width: 992px) {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
@@ -1100,100 +1260,57 @@ section .container {
   color: #18d26e;
 }
 
-.contact .php-email-form {
+/* Estilos para el formulario */
+.contact.php-email-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
+  border-radius: 10px; /* Hace que los bordes del formulario sean redondeados */
   text-align: center;
-  padding: 15px;
-  font-weight: 600;
 }
 
-.contact .php-email-form .loading {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  text-align: center;
-  padding: 15px;
+/* Estilos para los campos del formulario */
+.contact.php-email-form .field {
+  margin-bottom: 20px;
 }
 
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
+.contact.php-email-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 0;
-  transition: 0.3s;
+.contact.php-email-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4e4c4c;
+  border-radius: 20px; /* Hace que los campos de entrada sean redondeados */
+  font-size: 16px;
+  background-color: #444444;
   color: #fff;
+  transition: border-color 0.3s ease; /* Agrega una transición suave para el cambio de color del borde */
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
+.contact.php-email-form input[type="text"]:focus {
+  border-color: #18d26e; /* Cambia el color del borde al recibir foco */
 }
 
-.contact .php-email-form input::-moz-placeholder,
-.contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
+/* Estilos para el botón de enviar */
+.contact.php-email-form #button {
+  background-color: #18d26e; /* Cambia el fondo del botón a verde */
+  color: #4b4747;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Hace que el botón sea redondeado */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.contact .php-email-form input::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
+.contact.php-email-form #button:hover {
+  background-color: #15bb62; /* Cambia el color de fondo del botón al pasar el cursor sobre él */
 }
 
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #18d26e;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #15bb62;
-}
 
 @keyframes animate-loading {
   0% {
@@ -1203,7 +1320,10 @@ section .container {
   100% {
     transform: rotate(360deg);
   }
+
+  
 }
+
 
 /*--------------------------------------------------------------
 # Credits
@@ -1224,7 +1344,6 @@ section .container {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
   }
 }
 

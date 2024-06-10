@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Personal Bootstrap Template</title>
+  <title>Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,10 +42,9 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
-
-      <h1><a href="index.html">Rodrigo Pinea</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <div class="text-container">
+      <h1 class="animated-text">Rodrigo Pinea</h1>
+    </div>
       <h2>Crear soluciones innovadoras me apasiona</h2>
 
       <nav id="navbar" class="navbar">
@@ -63,19 +62,18 @@
       <div class="social-links">
         <a class="social-icon" href="https://ar.linkedin.com/in/rodrigo-pinea-75ba9025a?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F"><i class="fab fa-linkedin-in"></i></a>
         <a class="social-icon" href="https://www.instagram.com/rodrigometal4ever?igsh=MXFjcnFwemo0dnBwNQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
-        <a class="social-icon" href="@PineaRodrigo"><i class="fab fa-twitter"></i></a>
-        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-icon" href=https://wa.me/2901477295><i class="fab fa-whatsapp"></i></a>
-        <a class="social-icon" href=https://wa.me/2901477295><i class="fab fa-github"></i></a>
+        <a class="social-icon" href="https://www.facebook.com/rodrigo.d.pinea/" ><i class="fab fa-facebook-f"></i></a>
+        <a class="social-icon" href="https://wa.me/2901477295"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-icon" href="https://github.com/Rodrigo198636"><i class="fab fa-github"></i></a>
       </div>
 
     </div>
-  </header><!-- End Header -->
+  </header><!-- fin Header -->
 
-  <!-- ======= About Section ======= -->
+  <!-- ======= sobre mi Section ======= -->
   <section id="about" class="about">
 
-    <!-- ======= About Me ======= -->
+    <!-- ======= sobre mi ======= -->
     <div class="about-me container">
 
       <div class="section-title">
@@ -124,6 +122,8 @@
           </p>
         </div>
       </div>
+
+     
 
     </div><!-- fin sobre mi -->
 
@@ -175,7 +175,7 @@
         <h2>Habilidades</h2>
       </div>
 
-      <div class="row skills-content">
+      <!-- <div class="row skills-content">
 
         <div class="col-lg-6">
 
@@ -224,21 +224,36 @@
               <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-
           
-          <div class="progress">
-            <span class="skill">Laravel <i class="val">55%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+        </div> -->
+
+      
+
+        <div class="row skills-content">
+          
+          <div class="new-image-container">              
+            <img src="assets/img/tecnologias/python_icon.png" alt="Imagen 1">            
+            <img src="assets/img/tecnologias/java_.png" alt="Imagen 2">
+            <img src="assets/img/tecnologias/css_icon.png" alt="Imagen 3">              
+            <img src="assets/img/tecnologias/js_logo.png" alt="Imagen 4">
+            <img src="assets/img/tecnologias/mysql_icon.png" alt="Imagen 5">
+            <img src="assets/img/tecnologias/laravel_logo_icon.png" alt="Imagen ">
+            <img src="assets/img/tecnologias/tailwind_css.png" alt="Imagen 7">
+            <img src="assets/img/tecnologias/boostrap_icon.png" alt="Imagen 8">
+            <img src="assets/img/tecnologias/alphine.png" alt="Imagen 9">              
+            <img src="assets/img/tecnologias/angular_icon.png" alt="Imagen 10">
+            <img src="assets/img/tecnologias/nodejs_icon.png" alt="Imagen 11">
+            <img src="assets/img/tecnologias/vuejs_icon.png" alt="Imagen 12">              
+            <img src="assets/img/tecnologias/react_icon.png" alt="Imagen 13">
+            <img src="assets/img/tecnologias/springjava.png" alt="Imagen 14">  
           </div>
-
-        </div>
-
-      </div>
-
+          
+         
+    </div>
+    
     </div><!-- fin habilidades -->
 
+   
     <!-- ======= intereses ======= -->
     <div class="interests container">
 
@@ -459,7 +474,7 @@
       </div>
 
     </div>
-  </section><!-- End Resume Section -->
+  </section><!-- fin Resumen Section -->
 
   <!-- ======= servicios Section ======= -->
   <section id="services" class="services">
@@ -486,7 +501,7 @@
             <div class="icon"><i class="ri-code-block"></i></div>
             <h4><a href="">Plataformas:</a></h4>
             <p>Diseño y desarrollo de plataformas web y móviles a medida para empresas
-               de todos los tamaños. Desde sitios web corporativos, particulares opara negocios,
+               de todos los tamaños. Desde sitios web corporativos, particulares o para negocios,
                trabajamos contigo para crear soluciones digitales que impulsen tu crecimiento.</p>
           </div>
         </div>
@@ -498,165 +513,72 @@
             <p>Brindamos consultoría especializada en proyectos de programación para ayudarte
                a alcanzar tus objetivos. Ya sea que necesites asistencia en la planificación 
                de un proyecto, optimización de código o resolución de problemas técnicos, 
-               estoy aquí para ayudarte a tener éxito en el mundo de la programación.</p>
-          </div>
-        </div>      
+               estoy aquí para ayudarte a tener éxito tu proyecto.</p>
+          </div>          
+        </div> 
+               
+        
       </div>
     </div>
   </section><!-- fin servicios Section -->
 
-  <!-- ======= Portfolio Section ======= -->
+  <!-- ======= Portfolio  ======= -->
   <section id="portfolio" class="portfolio">
     <div class="container">
 
       <div class="section-title">
         <h2>Portfolio</h2>
-        <p>My Works</p>
+        <p>Mis Proyectos</p>
       </div>
 
       <div class="row">
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
+            <li data-filter="*" class="filter-active">Plataformas</li>            
           </ul>
         </div>
       </div>
 
       <div class="row portfolio-container">
-
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/adminpol1png.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
+              <h4>Administrador Policial</h4>
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1">
+                  <i class="bx bx-plus"></i>
+                </a>
+                <a href="portfolio1.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
+                  <i class="bx bx-link"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-
+      
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/recursos1.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>Recursos Humanos</h4>
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3">
+                  <i class="bx bx-plus"></i>
+                </a>
+                <a href="portfolio2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
+                  <i class="bx bx-link"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
+      </div>   
+    
     </div>
-  </section><!-- End Portfolio Section -->
+  </section><!-- fin Portfolio Section -->
 
   <!-- ======= contactoSection ======= -->
   <section id="contact" class="contact">
@@ -682,11 +604,11 @@
             <i class="bx bx-share-alt"></i>
             <h3>Mis Redes</h3>
             <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.facebook.com/rodrigo.d.pinea/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/rodrigometal4ever/?igsh=MXFjcnFwemo0dnBwNQ%3D%3D&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://github.com/Rodrigo198636" class="github"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/feed/?trk=seo-authwall-base_sign-in-submit" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://wa.me/2901477295" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
             </div>
           </div>
         </div>
@@ -704,39 +626,45 @@
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
             <h3>Llamame</h3>
-            <p>+64 2901 477295</p>
+            <p>+54 2901 477295</p>
           </div>
         </div>
       </div>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Correo Electrónico" required>
-          </div>
+      <form id="form" class="contact php-email-form">
+        <div class="field">
+          <label for="from_name"></label>
+          <input type="text" name="from_name" id="from_name" placeholder="Nombre">
         </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Teléfono" required>
+        <div class="field">
+          <label for="email_id"></label>
+          <input type="text" name="email_id" id="email_id", placeholder="Correo Electrónico">
         </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Describí una breve consulta" required></textarea>
+        <div class="field">
+          <label for="telephone_id"></label>
+          <input type="text" name="telephone_id" id="telephone_id" placeholder="Número Telefónico">
         </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Tu mensaje fue enviado. Gracias!</div>
+        <div class="field">
+          <label for="message"></label>
+          <input type="text" name="message" id="message" placeholder="Dejame un Mensaje">
         </div>
-        <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+        <input type="submit" id="button" value="Enviar">
       </form>
+      
+      
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('9BuzNqM15uD8PsDnZ')
+      </script>
 
     </div>
   </section><!-- End Contact Section -->
 
   <div class="credits">
-    Diseñado por RodrigoDev</a>
+    Diseñado por RodrigoDev
+  @ All rigths reserved</a>
   </div>
 
   <!-- Vendor JS Files -->
@@ -751,7 +679,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src= "assets/js/email.js"></script>
+  
 </body>
 
 </html>

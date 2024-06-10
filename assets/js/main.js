@@ -250,5 +250,14 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+  
+  window.addEventListener('load', function() {
+    var textElement = document.getElementById('text');
+    textElement.classList.remove('animated-text');
+    textElement.classList.add('static-text');
+  });
+
+
 
 })()
+
