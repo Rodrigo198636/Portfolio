@@ -1186,6 +1186,7 @@ section .container {
     max-width: 100%; /* Ajusta el ancho máximo de las imágenes en dispositivos más pequeños */
     height: auto; /* Ajusta la altura de las imágenes de forma proporcional */
   }
+}
 @media (max-width: 992px) {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
@@ -1354,4 +1355,5 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
 }
