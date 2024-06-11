@@ -1,10 +1,3 @@
-/**
-* Template Name: Personal
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -73,6 +66,30 @@ body::before {
   .animated-text {
     font-size: 1.2rem; /* Tamaño del texto más pequeño para pantallas muy pequeñas */
   }
+
+  
+}
+
+
+/* Estilos para pantallas medianas */
+@media (min-width: 601px) and (max-width: 883px) {
+  .animated-text {
+    font-size: 2.2rem; /* Tamaño del texto para pantallas medianas */
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 884px) and (max-width: 1199px) {
+  .animated-text {
+    font-size: 2.5rem; /* Tamaño del texto para pantallas grandes */
+  }
+}
+
+/* Estilos para pantallas muy grandes */
+@media (min-width: 1200px) {
+  .animated-text {
+    font-size: 3rem; /* Tamaño del texto para pantallas muy grandes */
+  }
 }
 
 
@@ -121,6 +138,27 @@ body {
   }
 }
 
+/* Ajustes para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .custom-carousel .carousel-inner img {
+    max-height: 400px; /* Ajusta la altura máxima de las imágenes en pantallas medianas */
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .custom-carousel .carousel-inner img {
+    max-height: 500px; /* Ajusta la altura máxima de las imágenes en pantallas grandes */
+  }
+}
+
+/* Ajustes para pantallas muy grandes */
+@media (min-width: 1441px) {
+  .custom-carousel .carousel-inner img {
+    max-height: 600px; /* Ajusta la altura máxima de las imágenes en pantallas muy grandes */
+  }
+}
+
 a {
   color: #18d26e;
   text-decoration: none;
@@ -143,6 +181,8 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+/* Estilos base para el encabezado */
+/* Estilos base para el encabezado */
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
@@ -158,13 +198,12 @@ h6 {
 }
 
 #header h1 {
-  font-size: 48px;
+  font-size: 48px; /* Tamaño de fuente por defecto para pantallas grandes */
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  
 }
 
 #header h1 a,
@@ -173,7 +212,6 @@ h6 {
   line-height: 1;
   display: inline-block;
   text-shadow: 3px 3px 5px rgba(16, 55, 160, 0.7);
-  
 }
 
 #header h2 {
@@ -187,7 +225,6 @@ h6 {
   color: #fff;
   border-bottom: 2px solid #18d26e;
   padding-bottom: 6px;
-  
 }
 
 #header img {
@@ -218,9 +255,17 @@ h6 {
   background: #1f2bd4;
 }
 
-@media (max-width: 992px) {
+#header .container {
+  display: flex;
+  flex-direction: row; /* Flex direction por defecto */
+  align-items: center;
+  justify-content: space-between; /* Distribuir el espacio entre los elementos */
+}
+
+/* Ajustes para dispositivos más pequeños */
+@media (max-width: 768px) {
   #header h1 {
-    font-size: 36px;
+    font-size: 36px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
   }
 
   #header h2 {
@@ -233,31 +278,75 @@ h6 {
   }
 
   #header .container {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Cambiar dirección a columna en pantallas pequeñas */
     align-items: center;
   }
-
-  @media (max-width: 768px){
-    #header h1 {
-      font-size: 36px;
-    }
-  
-    #header h2 {
-      font-size: 20px;
-      line-height: 30px;
-    }
-  
-    #header .social-links {
-      margin-top: 15px;
-    }
-  
-    #header .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
 }
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #header h1 {
+    font-size: 42px; /* Tamaño de fuente para pantallas medianas */
+  }
+
+  #header h2 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  #header .social-links {
+    margin-top: 18px;
+  }
+
+  #header .container {
+    flex-direction: column; /* Cambiar dirección a columna en pantallas medianas */
+    align-items: center;
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #header h1 {
+    font-size: 48px; /* Tamaño de fuente para pantallas grandes */
+  }
+
+  #header h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  #header .social-links {
+    margin-top: 20px;
+  }
+
+  #header .container {
+    flex-direction: column; /* Cambiar dirección a columna en pantallas grandes */
+    align-items: center;
+  }
+}
+
+/* Ajustes para pantallas muy grandes */
+@media (min-width: 1441px) {
+  #header h1 {
+    font-size: 54px; /* Tamaño de fuente para pantallas muy grandes */
+  }
+
+  #header h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  #header .social-links {
+    margin-top: 22px;
+  }
+
+  #header .container {
+    flex-direction: column; /* Cambiar dirección a columna en pantallas muy grandes */
+    align-items: center;
+  }
+}
+
+
 
 /* Estilos básicos para el contenedor de imágenes */
 .image-container {
@@ -458,6 +547,83 @@ h6 {
   color: #fff;
 }
 
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li + li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Estilos responsivos para pantallas medianas */
+@media (min-width: 577px) and (max-width: 992px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
+  .navbar li + li {
+    margin-left: 20px;
+  }
+}
+
+/* Estilos responsivos para pantallas grandes */
+@media (min-width: 993px) and (max-width: 1440px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+
+  .navbar li + li {
+    margin-left: 30px;
+  }
+}
+
+/* Estilos responsivos para pantallas muy grandes */
+@media (min-width: 1441px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+
+  .navbar li + li {
+    margin-left: 40px;
+  }
+
+  .navbar a {
+    font-size: 18px; /* Tamaño de fuente mayor para pantallas muy grandes */
+  }
+}
+
 /**
 * Mobile Navigation 
 */
@@ -642,6 +808,43 @@ section .container {
     align-items: flex-start; /* Ajusta la alineación vertical para evitar romper en pantallas pequeñas */
   }
 }
+
+/* Estilos responsivos para pantallas medianas */
+@media (min-width: 577px) and (max-width: 992px) {
+  .about-me .content h3 {
+    font-size: 24px; /* Ajusta el tamaño del título en pantallas medianas */
+  }
+
+  .about-me .content ul li {
+    flex-direction: row; /* Cambia el diseño de las listas a una fila en pantallas medianas */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+  }
+}
+
+/* Estilos responsivos para pantallas grandes */
+@media (min-width: 993px) and (max-width: 1440px) {
+  .about-me .content h3 {
+    font-size: 28px; /* Ajusta el tamaño del título en pantallas grandes */
+  }
+
+  .about-me .content ul li {
+    flex-direction: row; /* Mantén el diseño de las listas en una fila en pantallas grandes */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+  }
+}
+
+/* Estilos responsivos para pantallas muy grandes */
+@media (min-width: 1441px) {
+  .about-me .content h3 {
+    font-size: 32px; /* Ajusta el tamaño del título en pantallas muy grandes */
+  }
+
+  .about-me .content ul li {
+    flex-direction: row; /* Mantén el diseño de las listas en una fila en pantallas muy grandes */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Counts
@@ -1130,6 +1333,21 @@ section .container {
   bottom: 15px;
   right: 15px;
 }
+
+/* Estilos responsivos para pantallas medianas y grandes */
+@media (min-width: 769px) {
+  .portfolio .portfolio-item {
+    display: inline-block; /* Cambia la visualización a en línea */
+    width: calc(33.33% - 20px); /* Ajusta el ancho para mostrar tres elementos por fila con margen */
+    margin-right: 20px; /* Añade margen entre los elementos */
+    vertical-align: top; /* Alinea los elementos en la parte superior */
+  }
+
+  .portfolio .portfolio-item:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento en cada fila */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
