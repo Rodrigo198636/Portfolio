@@ -28,6 +28,30 @@ body::before {
   }
 }
 
+/* Estilos para pantallas medianas */
+@media (max-width: 1023px) {
+  body::before {
+    background-attachment: scroll; /* Cambia el comportamiento del background en pantallas medianas */
+    /* Otros estilos específicos para pantallas medianas */
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  body::before {
+    background-attachment: scroll; /* Cambia el comportamiento del background en pantallas pequeñas */
+    /* Otros estilos específicos para pantallas pequeñas */
+  }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+  body::before {
+    background-attachment: scroll; /* Cambia el comportamiento del background en pantallas extra pequeñas */
+    /* Otros estilos específicos para pantallas extra pequeñas */
+  }
+}
+
 /* Estilos básicos para el contenedor del texto */
 .text-container {
   overflow: hidden; /* Ocultar cualquier contenido que desborde el contenedor */
