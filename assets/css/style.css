@@ -1355,17 +1355,14 @@ section .container {
 .portfolio-details {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
+  overflow-y: auto; /* Añade un desplazamiento vertical cuando el contenido es demasiado largo */
 }
 
 .portfolio-details .container {
   padding-top: 20px;
   padding-bottom: 40px;
+  max-width: 800px; /* Limita el ancho máximo del contenido para mejorar la legibilidad */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
 }
 
 .portfolio-details .portfolio-title {
@@ -1399,17 +1396,66 @@ section .container {
   padding: 15px 0 0 0;
 }
 
-@media (max-width: 768px) {
+/* Estilos responsivos para pantallas medianas y grandes */
+@media (min-width: 769px) {
+  /* Estilos para pantallas medianas y grandes */
+  .portfolio-details {
+    display: flex; /* Utiliza flexbox para alinear elementos en columnas */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+  }
+
+  .portfolio-details .portfolio-info {
+    flex: 1; /* Hace que la información del portfolio ocupe el espacio restante */
+    margin-left: 20px; /* Añade un margen a la izquierda para separar del contenido principal */
+  }
+
   .portfolio-details img {
-    max-width: 100%; /* Ajusta el ancho máximo de las imágenes en dispositivos más pequeños */
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes para que se ajusten al contenedor */
     height: auto; /* Ajusta la altura de las imágenes de forma proporcional */
   }
+  
 }
-@media (max-width: 992px) {
+ /* Estilos para pantallas pequeñas */
+ @media (max-width: 768px) {
+  .portfolio-details {
+    flex-direction: column; /* Alinea las imágenes verticalmente */
+    align-items: center; /* Centra las imágenes en pantallas pequeñas */
+  }
+
+  .portfolio-details .container {
+    padding-top: 10px; /* Reduce el espacio superior en el contenedor en pantallas pequeñas */
+    padding-bottom: 20px; /* Reduce el espacio inferior en el contenedor en pantallas pequeñas */
+  }
+
+  .portfolio-details .portfolio-title {
+    font-size: 22px; /* Reduce el tamaño del título en pantallas pequeñas */
+    margin-bottom: 15px; /* Reduce el espacio inferior del título en pantallas pequeñas */
+  }
+
   .portfolio-details .portfolio-info {
-    padding-top: 20px;
+    padding-top: 30px; /* Ajusta el espacio superior de la información en pantallas pequeñas */
+  }
+
+  .portfolio-details .portfolio-info h3 {
+    font-size: 18px; /* Reduce el tamaño del título en pantallas pequeñas */
+    margin-bottom: 15px; /* Reduce el espacio inferior del título en pantallas pequeñas */
+  }
+
+  .portfolio-details .portfolio-info ul {
+    font-size: 14px; /* Reduce el tamaño de la fuente de la lista en pantallas pequeñas */
+  }
+
+  .portfolio-details .portfolio-info p {
+    font-size: 14px; /* Reduce el tamaño de la fuente de los párrafos en pantallas pequeñas */
+    padding-top: 10px; /* Ajusta el espacio superior de los párrafos en pantallas pequeñas */
+  }
+
+  .portfolio-details img {
+    width: 100%; /* Tamaño más pequeño para pantallas pequeñas */
   }
 }
+
 
 .portfolio-details .swiper-pagination {
   margin-top: 20px;
@@ -1426,6 +1472,11 @@ section .container {
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Contact
