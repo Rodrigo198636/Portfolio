@@ -116,6 +116,20 @@ body::before {
   }
 }
 
+/*icono de wassap*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icon img {
+  width: 40px; /* Ajusta el tamaño aquí */
+  height: 40px; /* Ajusta el tamaño aquí */
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -1648,5 +1662,4 @@ section .container {
 
 .credits a:hover {
   color: #fff;
-}
 }
