@@ -46,6 +46,42 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer clic */
       }
 
+      #mensaje-movil {
+      background-color: #d9534f; /* Rojo de advertencia */
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 80%;
+      margin: 20px auto;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    #mensaje-movil:hover {
+      background-color: #c9302c; /* Rojo más oscuro al pasar el ratón */
+    }
+
+    #mensaje-movil p {
+      margin: 0;
+    }
+
+    .mensaje-movil {
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
      
     </style>
     <script>
@@ -447,19 +483,7 @@
           }
         }
       };
-       // Detectar si el dispositivo es móvil
-       function isMobile() {
-        return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-      }
-
-      // Si el usuario está en un móvil, mostrar un mensaje o redirigir
-      window.onload = function() {
-        if (isMobile()) {
-          document.body.innerHTML = "<h1>Este juego no es compatible con dispositivos móviles.</h1>";
-          // O puedes redirigir a una página diferente:
-          // window.location.href = 'pagina_no_soportada.html';
-        }
-      };
+      
     </script>
   </head>
 

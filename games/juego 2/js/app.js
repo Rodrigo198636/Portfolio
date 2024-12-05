@@ -309,17 +309,5 @@ window.onload=function(){
 		};
 	}
 }
-// Detectar si el dispositivo es móvil
-function isMobile() {
-	return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-  }
 
-  // Si el usuario está en un móvil, mostrar un mensaje o redirigir
-  window.onload = function() {
-	if (isMobile()) {
-	  document.body.innerHTML = "<h1>Este juego no es compatible con dispositivos móviles.</h1>";
-	  // O puedes redirigir a una página diferente:
-	  // window.location.href = 'pagina_no_soportada.html';
-	}
-  };
 
