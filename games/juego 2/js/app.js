@@ -309,12 +309,17 @@ window.onload=function(){
 		};
 	}
 }
-//coigo para detectar telefono mobil y que el juego no se reproduzca
-if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    // Mostrar el mensaje si se está en un dispositivo móvil
-    document.getElementById('mensaje-movil').style.display = 'block';
-    // Bloquear la interacción con el juego (opcional)
-    document.querySelector('body').style.overflow = 'hidden'; // Desactivar el desplazamiento de la página
-    // Puedes también detener el juego si es necesario, usando algún método del juego
-}
+// Detectar si el dispositivo es móvil
+function isMobile() {
+	return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  }
+
+  // Si el usuario está en un móvil, mostrar un mensaje o redirigir
+  window.onload = function() {
+	if (isMobile()) {
+	  document.body.innerHTML = "<h1>Este juego no es compatible con dispositivos móviles.</h1>";
+	  // O puedes redirigir a una página diferente:
+	  // window.location.href = 'pagina_no_soportada.html';
+	}
+  };
 
