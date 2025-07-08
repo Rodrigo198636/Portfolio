@@ -251,11 +251,14 @@
    */
   new PureCounter();
   
-  window.addEventListener('load', function() {
-    var textElement = document.getElementById('text');
+window.addEventListener('load', function() {
+  var textElement = document.getElementById('text');
+  if (textElement) {
     textElement.classList.remove('animated-text');
     textElement.classList.add('static-text');
-  });
+  }
+});
+
 
 
 
