@@ -1868,3 +1868,25 @@ section .container {
     50%  { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
+
+/* area clickeable mobile */
+.mobile-nav-toggle{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 9999;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 991px){
+  .mobile-nav-toggle{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+  }
+}
