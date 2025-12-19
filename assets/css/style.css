@@ -1838,7 +1838,46 @@ section .container {
   color: #fff;
 }
 
+/* Contenedor centrado y separado del footer */
+.navidad-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 40px 0;
+    animation: fadeIn 2s ease-out forwards;
+}
 
+/* Imagen con animación de flotación */
+.navidad-img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, .3));
+    animation: float 3s ease-in-out infinite;
+}
+
+.navidad-container{
+  pointer-events: none; /* no intercepta taps */
+  z-index: 0;
+}
+
+.navidad-container{
+  position: relative;   /* o absolute, pero controlado */
+}
+
+
+/* Fade-in suave */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Movimiento de flotación */
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
 
 /* area clickeable mobile */
 .mobile-nav-toggle{
@@ -1870,4 +1909,11 @@ section .container {
 /* Y el botón (hamburguesa/X) arriba del overlay */
 .mobile-nav-toggle{
   z-index: 20001;
+}
+
+/* refuerzo header */
+#header{
+  position: relative;
+  z-index: 10000;
+  isolation: isolate;
 }
