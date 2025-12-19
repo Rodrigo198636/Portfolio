@@ -1879,6 +1879,16 @@ section .container {
     100% { transform: translateY(0); }
 }
 
+@media (max-width: 991px){
+  .navidad-container{
+    position: fixed;
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+  #header{ z-index: 10000 !important; }
+}
+
+
 /* area clickeable mobile */
 .mobile-nav-toggle{
   display: inline-flex;
