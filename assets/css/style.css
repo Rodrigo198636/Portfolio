@@ -1890,3 +1890,13 @@ section .container {
     right: 15px;
   }
 }
+
+/* Que el overlay del menú siempre quede arriba de todo */
+.navbar-mobile{
+  z-index: 20000;
+}
+
+/* Y el botón (hamburguesa/X) arriba del overlay */
+.mobile-nav-toggle{
+  z-index: 20001;
+}
